@@ -1,0 +1,66 @@
+HTML
+----
+Hyper Text Markup Language 
+Hyper - Link
+Text -data
+Markup ->Predefined
+Language -> Communication
+
+Static pages 
+CSS - styles
+Javacsript -> dynamic functionality 
+
+HTML is not a programming language (markup tags)- used to describe webpage
+
+extension of html or .htm
+
+Creating HTML - (notepad or notepad++),chrome or IE 
+
+Synatx for tag
+-----
+< - less than symbol
+tag name
+> - gretaer than symbol
+
+HTML Tags
+-----
+1.head - metadata (data abt data information related to document ) - search engine 
+2.body -actual content
+3.Comment - <!-->
+4.Headings (H1 TO H6)
+5.Paragraph <p> - single line or multi lines
+6.bold <b> - string or emphasis
+7.Italic <i>
+8.List - unordered ,ordered<li>
+ordered -ol
+unordered - ul (square,circle)
+9.quotes - <q>
+10.underline - <u>
+11. var - variable in pgming<var>
+12. details - aditional details which user can open and close on demand <details>
+13.del -deleted <del>
+14.dialog box or sub window - <dialog open>
+15.footer - <footer>
+16.header - <header>
+17. description list -<dl><dt> - dt should be used in description with dl
+18.center - <center>
+19. <table>
+ <th> - table header
+ <tr> - table row
+ <td> - table data (column)
+20.image -<img>
+21.anchor tag <a> 
+22.&nbsp- single non breaking space
+ensp - 2 spaces
+emsp- 4 spaces
+nbsp - tab 
+23.break -<br>
+24.label tag - specify label for any input element of form
+
+
+HTTP  methods
+-----
+POST - creating
+GET - fetch 
+PUT - update
+DELETE - delete

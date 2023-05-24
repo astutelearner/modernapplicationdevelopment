@@ -1,0 +1,87 @@
+CSS - Cascading Style sheet
+---
+add styles to HTML. CSS describes how html elements are displayed on a page
+
+styles - colors,fonts,size,borders
+
+we can define css 
+1.inline
+2.using style tag
+3.using css file
+
+basic struture for css file
+------
+tagname
+{
+property:value
+}
+
+
+Element selectors - for particular elements
+-----
+h1
+{
+color:red;
+}
+
+
+ID Selectors
+------
+#sph1{
+color:red;
+}
+
+<h1 id="sph1">hello</h1>
+
+class selectors
+-----
+select all elements within class
+<head>
+<style>
+h1.special
+{
+color:red;
+}
+</style>
+</head>
+<body>
+<h1 class="special">welcome</h1>
+</body>
+
+Advanced CSS Selectors
+-----
+1.*
+{
+color:blue;
+}
+
+2.Descendant selector
+
+li a 
+{
+color:white;
+background:blue;
+}
+
+
+All css [roperties of parent are by default available to child .This is called inheritance 
+
+
+Fonts & text in css
+---
+font-family
+font-size
+font-weight
+line-height
+text-align
+text-decoration
+
+
+h1{
+font-family: Arial Black;
+font-size: 20px;
+font-weight: 600;
+line-height : 1.5;
+text-align:center;
+text-decoration:line-through;
+}

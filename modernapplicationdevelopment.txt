@@ -1,0 +1,58 @@
+Earlier days 
+
+Monlithic architectuyre - tightly coupled
+
+1.whenver u hav enew feature to be added sinc eit is tightly coupled so you need to updtae in the same repository
+2.We need to redeploy on prod for the changes to get reflected 
+3.downtime 
+4.scaling will be difficult
+5.As code grows difficult to handle 
+6.Explaining abt the project also will be very difficult for new folks 
+7.Reliability - code chnage is break the flow 
+
+
+cloud providers
+1.AWS
+2.Google GCP
+3.Microsoft Azure
+4.IBM Cloud 
+
+
+Microservice architecture
+scale up for 2 weeks till big billion days - u will pay for what u are going to use (pay per use model)
+need to scale up search the product (catalog application)
+catlog search product (5 instances)
+aad to cart (5 instance)
+payments (3 instances)
+
+Application modernization - to overcome pbms of monolithic and to adopt digital transformation 
+
+Catalog - list of products available
+
+Microservice vs nano service
+Lambda -for creating nano services (add to cart microservice implement small functionality of fetching product details (name,description))
+
+Monolithic -> Microservice -> Nano service (lambda)
+
+Disadvatages of microservice architecture
+-----
+1.small funationality - fetching product details
+2.cost for maintaing will be bit more bcz of more num of repos for each functionlity
+3.Monitoring for different services difficult
+
+What is transforming legacy application to modern application means
+----------------------------
+renovate legacy application to modern application
+infrastructure in olden days they used to buy physical servers they were not having virtual servers 
+rather waterfall agile methodlogy 
+devops option -application will be hosted on the servers
+
+
+Devops - code repository ,pipelines(jenkins),maintaining env 
+
+Dev
+Qa 
+Stage(replica of production)
+production
+
+

@@ -1,0 +1,126 @@
+Javascript
+-----
+Javascript is a programming language and add functionality to HTML
+
+Datatypes
+-------
+Number (int,float)
+String (single quote or double quote)
+boolean
+null
+undefined
+
+
+alert - popup
+prompt - allowing user to input
+console.log - printing
+
+
+OPeartors
+------
+Arthimetic operators - +,-,*,/,%
+Compariosn operators -<.<=,>,>=,!=,==,===
+logical operator (&&,||,!)
+
+!true
+
+
+var num1='saipriyadarshini'
+var num2='abc'
+
+conditions in javascript
+-----
+1.if
+2.if  else scenario 
+3.else if 
+
+
+How to create variablees in javascript
+-----
+camelcase
+saipriyaDarshini  
+
+
+camelcase - javascipt - saipriyaDarshini
+snake case  - python - saipriya_darshini
+kebab case - lisp - sai-priya-darshini
+
+variables which are declared but not initialiized are undefined
+null - nothing 
+
+
+loop
+----
+iterate and perforam the action in repeatative manner
+while
+for
+
+var num=Number(prompt('Enter any number'))
+while(num<5)
+{
+	alert('hi')
+	num++;
+	}
+
+
+//print each character of a string
+var name='saipriyadarshini'
+var i=0;
+while(i<name.length)
+{
+	alert(name[i]);
+	i++;
+}
+
+
+//syntax for loop
+initialization;condition;increment or decremennt
+
+
+while vs loop
+---
+while - we are not sure of no of iteratiobs in advance and keep on executing till condition is true
+for - no of iterations in advance then u can reuse that
+
+
+
+function 
+-----
+function functionName(arguments)
+{
+//body
+//return value
+}
+
+
+javascript scopes - local,global
+
+Javascript arrays - mutilple valuews can be stored to single variable 
+
+var names=["sai","priya"]
+
+
+Methos of Javascript arrayts
+1.push
+2.popup
+3.shift
+4.unshift
+5.slice
+6.indexof
+
+
+Multidimensional
+----
+var num=[[10,20,30],[40,50,60]];
+
+Array - group of indiviual objects
+object - group of key value pair
+var movie={
+name:'xyz',
+year:2016
+}
+
+Initialization of objects - 
+var num={}
+var num=new Object();
+}

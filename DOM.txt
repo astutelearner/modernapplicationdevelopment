@@ -1,0 +1,19 @@
+DOM - Document Object Model
+It is the API for HTML and XML documents
+When concerned with HTML
+All HTML elements in a page are put in one object a DOM
+
+
+DOM
+---
+document.getElementById
+document.querySelectorAll
+document.wuerySelector
+
+
+DOM is platform and language neutral interface where you can dynamically access and update the content,structure and style 
+
+w3c core parts
+1.Core DOM - for all document typess
+2.XML DOM - xml document types
+3.HTML DOM - html document types 

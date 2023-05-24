@@ -1,0 +1,35 @@
+Scopes in Javascript
+------
+1.Block scope
+2.Function Scope
+3.Global Scope
+
+Block scope
+------
+{
+    let x=2;
+}
+
+
+for let & const have block scope and var keyword cannot be used for block scope
+
+Local scope
+-----
+function myFunction()
+{
+   let name="xyz";
+}
+
+
+
+Global scope
+---
+let name="xyz"
+
+function myFunction()
+{
+   //name can be accessed here
+}
+
+scope is applicable for both funcrions as well as variables 
+Function arguments by default will be local

@@ -1,0 +1,41 @@
+this keyword in javascript
+----------
+In Javascript thus keywor refers to an object
+
+this refers to a global object
+
+let name='abc';
+
+function call()
+{
+   return this.name;
+}
+
+
+using this individually
+-----------------------
+let name=this;
+
+In the above context this refers to the global object
+
+
+using this as an return type 
+-------
+function call()
+{
+  return this;
+}
+
+Object Method Binding
+---------
+const Developer={
+name:'abc',
+techStack:function()
+{
+  return "fullstackdeveloper";
+}
+};
+
+this keyword precedence
+------
+object method binding > global scope

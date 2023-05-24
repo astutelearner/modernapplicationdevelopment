@@ -1,0 +1,120 @@
+Prototype in Javascript
+--------
+Object class as super class in java in the same way all javascript objects inherit properties and methods from prototype
+
+Object.prototype 
+
+prototype property allows you ato add new properties
+function Person(first,last,age)
+{
+ this.firstanme=first;
+ this.lastname=last;
+ this.age=age;
+}
+
+
+Person.protoype.nationality='Indian';
+
+
+Inheritance in javascript
+----
+A class craeted with a class inheritance by default inherits methods and variables
+extends keyword 
+
+//super or parent class
+class Animal
+{
+  var animalName='';
+  constructor(brand)
+  {
+    this.animalName=brand;
+  }
+  call()
+  {
+    return this.animalName;
+  }
+}
+
+//child class
+class Dog extends Animal{
+    var breedName='';
+    constructor(breed)
+	{
+	  this.breedName=breed;
+	}
+	
+    bark()
+	{
+	  this.call();
+	}
+}
+
+
+Error handling in javacript
+------
+try
+catch
+throw
+finally
+
+
+try & catch
+----
+try
+{
+  //block of code that might throw error
+}
+catch(err)
+{
+  //block of code to handle the errors
+}
+
+
+if any error then the next line in try block will not be exceuted and it will move to catch block
+if no error then catch block will not be executed
+
+throw
+----
+normally wanto to stop and generate an error message ,then we will use throw keyword to throw an exception
+throw "";
+u can use throw keyword as well with try and catch
+
+
+finally
+-----
+try{
+//block of code which might throw an error
+}
+catch(err)
+{
+//block of code to handle the errors
+}
+finally
+{
+// Execute this piece of code for sure if any exception or error occurs then that type of code shoul be present in finally block 
+//database conenctions or garbage cleanup for objects ,methods u can put that piece of code 
+}
+
+
+Regular expression in javascript
+----
+Regular expression in javascript refers to pattern of characters
+
+/pattern/modifiers
+var pattern=/Saipriya/i
+
+Modifiers in javascript
+-----
+i - case insensitive
+g- find the character globally
+m- multiline matching
+
+var pattern=/Saipriya/i
+function call()
+{
+  var name="SAIPRIYA";
+  console.log(name.search(this.pattern));
+}
+
+
+RegExp in javascript 

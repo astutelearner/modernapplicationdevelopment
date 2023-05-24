@@ -1,0 +1,12 @@
+aggregate functions - perform aggrgetion on multiple values and return a single value
+--------
+1.sum - select sum(columnName) from database.tableName
+2.avg - select avg(columnName) from database.tableName
+3.max - select max(columnName) from database.tableName
+4.min - select min(columnName) from database.tableName
+5.count - select count(*) from database.tableName
+
+Manipulating data
+-----
+update - update tableName set columnName=newValue where columnName=oldValue
+delete - delete from tableName where columnName=value;

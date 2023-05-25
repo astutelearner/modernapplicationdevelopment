@@ -1,0 +1,27 @@
+MONGO - NOSQL Database
+---
+NOSQL stands for NOT ONLY SQL
+NON Tabular format you will be saving the data
+
+
+Benefits of NO SQL
+--
+1.Flexible schemas
+2.Horizontal scaling
+3.Fast queries
+4.Easy to use
+
+Types of NOSQL Databases
+---
+1.Document database (mongo)
+2.key value database (dynamo db)
+3.wide column stores
+4.graph databases (neo4j)
+
+When u have to go for NO SQL databases
+-----
+1.huge volumes of data(eg : aadhar application)
+2.dynamic schemas
+3.modern application development like microservices ,agile process
+4.better performance and cost effective
+

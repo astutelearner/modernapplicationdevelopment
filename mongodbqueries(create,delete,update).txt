@@ -1,0 +1,33 @@
+Tables in RDBMS - Collections in Mongo
+Rows in RDBMS - Documents in Mongo
+
+mongo shell
+-----
+show dbs
+use databasename
+
+create collection
+------------------
+db.createCollection("collection name");
+
+see list of collections
+------------------------
+show collections;
+
+insert into mongo collection
+-----------------------------
+db.collectionname.insertOne({'key':'value'})
+
+update document
+----
+db.collectionname.updateOne({columnName:value},{$set:{columname:value}}});
+
+delete document
+-----
+db.collectioname.deleteOne({columnName:value});
+
+count of documents in mongo
+----------------------
+db.collectionname.countDocuments()
+Eg: db.student.countDocuments()
+

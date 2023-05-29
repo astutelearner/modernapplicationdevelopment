@@ -1,0 +1,58 @@
+Java
+---
+Java is object oriented oriented ,platform independent programming language
+
+platform independent - write code in unix ,jit compiler will convert java code to byte code ,take this byte code and run on windows operating system .write once
+run anywhere
+
+James Gosling who is considere as Father of java first named as oak since oak was already registered they rename to java
+
+Application 
+----
+1.desktop application like antivirus
+2.web application 
+3.enterprise applications
+4.mobile applications
+
+editions
+---
+1.Java Standard Edition - It has simple programming APIS ,OOPS,String,Regex,Exceptions,Multithreading,Collections,(Core Java)
+2.Java Enterprise Edition - Servlets,JSP,EJB ,JPA (Intermediate Java)
+3.Java FX -to develop rich internet applications 
+
+
+JVM,JRE,JDK
+
+JVM - Java Virtual Machine
+JRE - Java Runtime Environment
+JDK - Java Development Kit
+
+JVM :
+loads , verify and execute
+
+jre - rt.jar 
+
+jdk - physically exists 
+
+Why java is important?
+Most popular programming language used across all the domains like finance -Barclays,Citigroup,retail-amazon
+Fo website,enterprise
+Java provides support for applets - small dynamic and interactive programs - calculator ,maps
+
+Reasons to learn java
+------
+1. Java is easy to learn
+2. Versatile - write once and run anywhere
+3.Popular object oriented pgming language 
+4,Scalability - destop,mobile,enterprise 
+5.Platform independent 
+6.Packages- folder,Interfaces-programs,classes -program - RICH APIS
+7. Open source
+8.nO license free to download
+
+Java API (Application Programming interface)
+---
+1.internal - B2B,A2A,B2C,B2E
+2.partners - B2B,B2C3.
+2.open source - B2C
+

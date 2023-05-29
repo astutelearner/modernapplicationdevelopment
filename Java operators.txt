@@ -1,0 +1,35 @@
+Operators 
+---
+1.Unary operator - prefix ,post fix
+prefix ++num/--num
+postfix num++/num--
+
+++expr/--expr
+expr++/expr--
+
+2.Arithmetic - +,-,*,/,%
+
+3.Shift - <<,>>
+<< -num *2 pow 2 
+
+>>- num/2 pow 2 
+
+4.Relational - <,>,,<=,>=,==,!=
+
+5.Bitwise operator - &,^,!
+
+6.Logical - &&, !!
+
+7.ternary-?:
+
+8.Assignment - =,+=,-=,%=,?=
+
+a= 4 - 100
+b=5 -101
+
+100
+101
+--
+100 =4
+
+

@@ -1,0 +1,57 @@
+Access Modifiers in Java
+---
+1.public - anywhere
+2.private - restricted only to class
+3.protected -subclasse of package 
+4.default - only within the package
+
+System - built in class
+out -member
+println- method 
+
+Syntax to run java program from cmd prompt
+------
+compile - javac filename.java
+run - java filename
+
+To check version
+---
+java -version
+
+higher version - compatible with lower
+lower version - not compatible with higher
+
+Datatypes 
+-----
+primitive - int,float,double,boolean,char,short,byte,long
+Non primitive -String,Arrays,classes
+
+byte - 1 byte size -128 t0 127
+short - 2 bytes size -32678 to 32767
+int -4 bytes
+float - 4 bytes
+char - 2 bytes - ASCII values 
+long - 8 bytes 
+double - 8 bytes
+boolean - 1  bit
+
+snytax for primitive
+---
+int num=9;
+long num=9L;
+float num=8f;
+double num=8;
+char num='9';
+boolean isActive='true';
+
+Syntax for Non primitive
+-----
+String name="saipriyadarshini";
+int num[]=new int[2];
+
+Java follows unicode system 2 bytes for characters
+
+lowest value - \u0000
+highest value -\uFFFF
+
+

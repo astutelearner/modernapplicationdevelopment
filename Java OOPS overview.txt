@@ -1,0 +1,17 @@
+OOPS Concept
+---
+1.Inheritance - Child object acquires properties of parent object
+2.polymorphism - same task u can perform in different manner
+3.Abstraction - hiding internal details but only show funztionality 
+4.Encapsulation - data and code together 
+
+class - blueprint for creating objects
+object - instance of class ,will have state(variables) and behaviour (methods)
+
+Inheritance - inheritance ,aggrgateion
+polymorphism - compile ,rumtime (method overlaoding,method overriding)
+abstraction - interface ,abstract
+Encapsulation - using access modifiers
+
+
+

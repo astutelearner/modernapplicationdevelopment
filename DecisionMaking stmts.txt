@@ -1,0 +1,55 @@
+decision making statments
+-----
+if (if ,else,else if)
+Syntax
+---
+if(condition)
+{
+//stmt
+}
+else if(condition)
+{
+//stmt
+}
+else{
+//stmt}
+
+Eg:
+
+public class Main {
+
+	public static void main(String args[])
+	{
+		int num=6;
+		if(num>10)
+		System.out.println(true);
+		else if(num>5)
+			System.out.println("greater than 5");
+		else
+		System.out.println(false);
+	}
+}
+
+
+switch statement
+switch(condition)
+{
+case 'condition':logic
+                  break;
+				  
+default 'condition':logic
+                   break;
+}
+
+
+Loops
+--
+for
+while
+do while
+for-each
+
+jump
+---
+break
+continue

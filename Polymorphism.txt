@@ -1,0 +1,120 @@
+Polymorphism
+-----
+ploy - many
+morphism - forms
+
+
+1.Method overloading - compile time 
+2.Method overriding
+
+
+Method overloading
+------
+1.change the no of arguments
+
+Eg:
+class Add {
+	static int add(int a, int b) {
+		return a + b;
+	}
+
+	static int add(int a, int b, int c) {
+		return a + b + c;
+	}
+}
+
+public class Test {
+public static void main(String args[])
+{
+	System.out.println(Add.add(2,3));
+	System.out.println(Add.add(2, 3,4));
+}
+}
+
+
+2.change the datatype
+Eg:
+class Add {
+	static int add(int a, int b,int c) {
+		return a + b;
+	}
+
+	static int add(int a, int b, String c) {
+		return a + b ;
+	}
+}
+
+public class Test {
+public static void main(String args[])
+{
+	System.out.println(Add.add(2,3,4));
+	System.out.println(Add.add(2, 3,"4"));
+}
+}
+
+Method overriding
+-------
+Rules
+----
+1.Classes must have parent child relatiosnhip
+2.child class method should have same name as in parent class
+3.child class parameter should be same as of parent class
+
+Eg :
+class Animal
+{
+   void shout()
+   {
+	   System.out.println("Inside Animal class");
+   }
+}
+
+class Dog extends Animal
+{
+	void shout()
+	{
+		System.out.println("Inside Dog class");
+	}
+}
+
+
+public class TestClassforMethodOverriding {
+
+	public static void main(String args[])
+	{
+		Dog dog=new Dog();
+		dog.shout();
+	}
+}
+
+
+Eg 2:
+class Animal
+{
+   void shout(String name)
+   {
+	   System.out.println("Inside Animal class");
+   }
+}
+
+class Dog extends Animal
+{
+	void shout(String name)
+	{
+		System.out.println("Inside Dog class");
+	}
+}
+
+
+public class TestClassforMethodOverriding {
+
+	public static void main(String args[])
+	{
+		Dog dog=new Dog();
+		dog.shout("xyz");
+	}
+}
+
+
+
+

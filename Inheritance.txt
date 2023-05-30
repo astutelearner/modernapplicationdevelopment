@@ -1,0 +1,40 @@
+Inheritance
+---------
+Code resuability
+
+class College
+{
+ float salary=60000;
+}
+
+class Faculty extends College{
+int bonus=10000;
+
+public static void main(String args[])
+{
+    Faculty faculty=new Faculty();
+	System.out.println("salary"+faculty.salary);
+	System.out.println("bonus"+faculty.bonus);
+}
+
+}
+
+
+
+class parent
+{
+
+}
+
+
+class childclass extends parent
+{
+}
+
+Different types of inheritance
+-----------------
+1.single inheritance
+2.multilevel inheritance
+3.hierarchial inheritance
+4.Hybrid inheritance (combinatiosn of 1-3 u can prepare)
+5.Mutiple inheritance is not supported in java

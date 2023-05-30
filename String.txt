@@ -1,0 +1,30 @@
+String
+-----
+String is one of the non primitive datatype and immutable class in java
+
+
+String --> implements -> Serializable,Comparable,CharSequence
+
+String - immutable
+
+StringBuffer - mutable
+StringBuilder - mutable:
+
+String literal
+String name="xyz" (pool)
+String name1="xyz";
+
+Heap
+----
+String name=new String("xyz");
+
+String name="xyz";
+name="abc";
+
+
+StringBuilder - not thread safe ,fast
+StringBuffer - thread safe multiple threads
+
+
+StringBuffer sb=new StringBuffer("hello");
+StringBuilder builder=new StringBuilder("hello1");

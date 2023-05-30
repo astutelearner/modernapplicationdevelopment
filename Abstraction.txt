@@ -1,0 +1,43 @@
+Abstraction
+----
+show only required details and hide the remaining
+
+ways to achieve abstraction
+-------
+1.abstract class(0 to 100%)
+2.interface(100% abstraction)
+
+abstract class rules
+----
+abstract class keyword to the class
+can have abstract and non abstract methods
+cannot create object for abstract class
+It can have constructors and static methods
+it can also have final methods
+
+Syntax
+----
+abstract class className
+{
+}
+
+Eg:
+abstract class Car
+{
+abstract void run();
+}
+public class Hyundai extends Car{
+
+	@Override
+	void run() {
+		System.out.println("inside child class");	
+	}
+	
+	public static void main(String args[])
+	{
+		Hyundai hyundai=new Hyundai();
+		hyundai.run();
+	}
+
+}
+

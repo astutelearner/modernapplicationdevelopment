@@ -1,0 +1,32 @@
+interface interfacename
+{
+
+//all methods inside this interface by default will be abstract,public and static
+}
+
+Java 8 - defualt and static
+Java 9 -private
+
+eG:
+interface Car {
+	void run();
+}
+
+public class Hyundai implements Car {
+
+	public void run() {
+		System.out.println("inside child class");
+	}
+
+	public static void main(String args[]) {
+		Hyundai hyundai = new Hyundai();
+		hyundai.run();
+	}
+
+}
+
+
+abstract class A ---> extends ---> abstract class B
+interface A ---> extends ---> interface B
+cross combination of class with interface --> implements
+abstract class to class --> extends

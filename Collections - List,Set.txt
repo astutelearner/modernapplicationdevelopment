@@ -1,0 +1,104 @@
+Collection - Interface
+Collections -class
+
+Collection -> List -> ArrayList ,LinkedList
+
+
+ArrayLIST - get operations ,based on index ,internally se arrays
+LinkedList - add,deletion ,manipulations use linkedlist
+
+
+Stack - LIFO (Last In First Out)
+Queue - FIFO (First In First Out)
+
+Set - no duplicates are allowed
+
+HashSet - order is not required
+LinkedHashSet - order is required
+TreeSet - sorted in ascending by default 
+
+Eg:
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		ArrayList<Integer> list=new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		
+		list.stream().forEach(System.out::println);
+	}
+}
+
+
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		List<Integer> list=new LinkedList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		
+		list.stream().forEach(System.out::println);
+	}
+}
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		Set<Integer> set=new HashSet<>();
+		set.add(1);
+		set.add(2);
+		set.add(1);
+		
+		set.stream().forEach(System.out::println);
+	}
+}
+
+
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		Set<Integer> set=new LinkedHashSet<>();
+		set.add(1);
+		set.add(2);
+		set.add(1);
+		
+		set.stream().forEach(System.out::println);
+	}
+}
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Test {
+
+	public static void main(String args[])
+	{
+		Set<Integer> set=new TreeSet<>();
+		set.add(3);
+		set.add(1);
+		set.add(2);
+		
+		set.stream().forEach(System.out::println);
+	}
+}

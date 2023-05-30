@@ -1,0 +1,104 @@
+Exception handling
+-------
+any event that disrupts flow we need to have exception handling
+
+
+types of exceptions
+------
+1.checked exceptions - compile time SQLException,IOException
+2.unchecked exceptions - runtime exceptions Arithmetic exception,NullPointer Exception,ArrayIndexOutOfBoundExcepiton
+3.error - outofmemorye error
+
+
+Keywords
+------
+try - code that might throw exception
+catch - handle the exception of try block
+throw - explicitly throw an exception
+throws - ddeclare exception ,doesn't throw an exception used along iwth method signature
+finally - execute if exception occured or not
+
+
+Eg:
+
+
+public class Test {
+public static void main(String args[])
+{
+	try
+	{
+		int num=100/0;
+	}
+	catch(ArithmeticException e)
+	{
+		System.out.println("error handling");
+	}
+}
+}
+
+
+
+public class Test {
+public static void main(String args[])
+{
+	try
+	{
+		int num=100/0;
+	}
+	catch(ArithmeticException e)
+	{
+		System.out.println("error handling");
+	}
+	finally
+	{
+		System.out.println("finally will be exceuted always");
+	}
+}
+}
+
+
+public class Test {
+
+	public static void check(int num)
+	{
+		if(num<1)
+		{
+			throw new RuntimeException("num is less than 1");
+		}
+	}
+
+	public static void main(String args[]) {
+      check(0);
+	}
+}
+
+
+methodname throws exceptionname
+
+
+public class Test {
+
+	public static void check(int num)throws Exception
+	{
+		if(num<1)
+		{
+			throw new RuntimeException("num is less than 1");
+		}
+	}
+
+	public static void main(String args[]) throws Exception {
+      check(0);
+	}
+}
+
+
+
+differences between throw and throws
+------------------
+1.throw is used to throw an exception explicitly in the code inside function or code block where as throws is used along with method signature to decalre an exception
+2.throw -> unchecked exception ,throws ->checked and unchecked exceptions
+3.throw -> object ,throws ->method
+4.throw -within the method ,throws -along with the method
+5.throw - only exception,throws-multiple exceptions
+
+

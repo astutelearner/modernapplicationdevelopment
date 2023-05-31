@@ -1,0 +1,80 @@
+JDBC - Java Database Connectivity
+
+It is a Java API to connect to database and excute the query
+
+4 types of JDBC drivers
+
+1.JDBC-ODBC driver - Oracle doesn't support JDBC-ODBC driver from java8
+adv:
+easy to use
+dis
+performance degrade - bridge driver,odbc driver
+2.Native driver
+adv:
+performance improvement compared to jdb-odbc driver
+dis:
+need to install on client machine
+3.Network protocol driver
+adv:
+middleware will take care
+dis:
+maintenance of database specific
+4.Thin driver- is fully written in java8
+adv :
+better performance compatred to all
+dis:
+depends on database
+
+
+Java Database Connectivity
+---------------------
+1.Register the driver - 
+Class.forName("com.mysql.jdbc.Driver")
+2.establish the connection - url ,username,password 
+Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/database",username,password);
+3.create the statement
+Statement stmt=conn.createStatement();
+4.Execute the query
+ResultSet ds=stmt.executeQuery("select * from department");
+5.close the connection
+connection interface has to be closed for object 
+by default resultset and statement will be closed
+
+adding jar
+---
+right click on project ->build path->configure build path-> libraries->add external jar -> downloaded jar ->apply
+
+Eg:
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class JDBCExample {
+
+	public static void main(String args[]) {
+		try {
+			// 1.register the driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			// 2.connection
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test1", "root", "tiger");
+
+			// 3.Statement
+			Statement stmt = conn.createStatement();
+
+			// 4.Execute query
+			ResultSet rs = stmt.executeQuery("select * from department");
+
+			while (rs.next()) {
+				System.out.println(rs.getInt(1) + " " + rs.getInt(2) + " " + rs.getString(3));
+			}
+
+			// 5.close the conenction
+			conn.close();
+		} catch (Exception e) {
+
+		}
+	}
+}

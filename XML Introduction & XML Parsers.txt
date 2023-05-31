@@ -1,0 +1,37 @@
+XML - Extensible Markup Language
+
+It is mode of communication between different appliactions
+
+Sample XML
+---------
+<?xml version="1.0"?>
+<Department>
+   <SNO>1</SNO>
+   <DEPARTMENTID>1</DEPARTMENTID>
+   <DEPARTMENTNAME>CSE</DEPARTMENTNAME>
+</Department>
+
+Advantages of XML
+------
+1.Human readable
+2.validation
+2.Extend
+4.Technology independent
+
+
+Disadvatage
+-----
+XML tags sometimes transmission and storage costs increases
+
+XML Parsers
+---
+1.DOM Parser - hierarchial tree fashion 
+2.SAX Parser - event based triggers instead of loading into memory
+3.StAX Parser - similar  to SAX Parser but in more efficient way
+
+
+Parsing - read the document 
+parent,child element,subchild element,attributes
+
+
+

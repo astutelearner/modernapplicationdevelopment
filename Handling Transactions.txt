@@ -1,0 +1,13 @@
+ACID
+
+A - Atomicity - all succesful or none
+C - Consistency - successful all transactions in database should be consistent
+I- Isolation - each transaction should be isolated from other
+D - Durability - any errors or power loss transaction should be handled accordungly
+
+commit and rollback
+
+conn.rollback(); - rollback
+
+
+conn.commit(); - save

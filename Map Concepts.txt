@@ -1,0 +1,65 @@
+Map  - key and value
+---
+Map is an interface
+HashMap
+LinkedHashMap
+TreeMap
+
+HashMap - if no order to be considered
+LinkedHashMap - if any insertion order to be considered
+TreeMap - sort keys in specific format - ascending order or descending order
+
+HashMap example:
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<>();
+		map.put("xyz", 1);
+		map.put("abc", 2);
+
+		map.entrySet().stream().forEach(System.out::println);
+
+	}
+
+}
+
+
+
+LinkedHashMap example:
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new LinkedHashMap<>();
+		map.put("xyz", 1);
+		map.put("abc", 2);
+
+		map.entrySet().stream().forEach(System.out::println);
+
+	}
+
+}
+
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new TreeMap<>();
+		map.put("xyz", 1);
+		map.put("abc", 2);
+
+		map.entrySet().stream().forEach(System.out::println);
+
+	}
+
+}
+
+

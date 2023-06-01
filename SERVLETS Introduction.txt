@@ -1,0 +1,46 @@
+SERVLETS
+-------
+Servlet is an interface which is used for server side programming
+
+HTTP - Hyper Text Transfer Protocol
+HTTPS- Hyper Text Transfer Protocol (Secure)
+
+HTTP is TCP/IP based communication protocol
+default port 80
+
+HTTP is stateless - each requets is independent
+HTTP is media independent
+HTTP is connectionless - Browser initiates request ,request is sent t o the server and then client disconnects frm the server and waits for the response
+
+
+HTTP Architecture
+-----
+
+1.Web Client
+2.Web Server
+3.Server Side Script
+4.Database
+
+HTTP Request Methods
+---
+GET - query
+PUT  - update
+POST - insert
+DELETE - delete
+TRACE - troubleshoot or testing
+
+
+header
+body
+path variables 
+
+
+Servlet lifecycle
+-----------------
+1.servlet class is loaded - classloader responsible to load the servlet
+2.servlet instance is created - only once it is created
+3.init method is invoked inkitialize the servlet
+4.service method is invoked - logic
+5.destroy method is invoked  - clean up the servler created - cleanup thread or memory
+
+

@@ -1,0 +1,49 @@
+methods to read form data using servlet
+-----
+1.getParameter() - value of form parameter
+getParameterValues() - mutiple values
+getParameterNames() - list of all parameters in the reaquest
+
+
+<html>
+<body>
+  <form action="HelloForm" method="GET">
+userName:<input type="text" name="username"/>
+password:<input type="text" name="password"/>
+<input type="submit" value="submit"/>
+  </form>
+</body>
+</html>
+
+
+
+public class HelloForm extends HttpServlet
+{
+  
+    public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException
+   {  
+      res.setContentType("text/html");
+      PrintWriter out =res.getWriter();
+      if(req.getParameter("username")=="abc"&&req.getParameter("password")=="xyz")
+   {
+       out.println("<html><body>hello form example</body></html>");
+   }
+   }   
+
+}
+
+
+create deployment descriptor
+------
+<web-app>
+<servlet>
+<servlet-name>HelloForm</servlet-name>
+<servlet-class>HelloForm</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>HelloForm</servlet-name>
+<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+</web-app>

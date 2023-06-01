@@ -1,0 +1,52 @@
+3 ways to create servlet
+--------
+1.By Implementing Servlet Interface
+2.Inheriting GenericServlet Class
+3.INheriting HttpServlet
+
+Apache tomcat server
+Weblogic
+Glassfish
+JBoss
+
+Step 1 - Create project structure
+2.create servlet
+public class DemoServlet extends HttpServlet
+{
+   public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletExcption,IOException
+{
+   //logic
+    res.setContentType("text/html");
+    PrintWriter pw=res.getWriter(); // get stream to write the data
+
+pw.println("<html><body>welcome to servlet</body></html>");
+
+pw.close();
+}
+
+}
+
+3.Use any server like tomcat
+4.deployment descriptor - web.xml
+web.xml
+----
+<web-app>
+
+<servlet>
+<servlet-name>demo</servlet-name>
+<servlet-class>DemoServlet<servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>demo</servlet-name>
+<url-pattern>/demo</url-pattern>
+</servlet-mapping>
+</web-app>
+
+<web-app> - whole appn
+<servlet-name> - sub element of servlet and that represents name of the servlet
+<servlet-class> - sub element of servlet that represents class of the servlet
+<servlet-mapping> - sub element of web app to map the servlet
+<url-pattern> sub element of <servlet-mapping> and using this to invoke the servlet from client
+
+by default it will run on 8080

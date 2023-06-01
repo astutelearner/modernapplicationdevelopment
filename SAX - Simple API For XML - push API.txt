@@ -1,0 +1,24 @@
+SAX - Simple API For XML - push API
+
+Client has no control of what to receive the XML data
+
+StAX - Streaming API for XML - pull API 
+
+Client has control of when to pull the data
+
+StAX Cursor API - Two Interfaces like XMLStreamReader and XMLStreamWriterbased on events we will map the data
+StAX Iterator API - Two interfaces XMLEventReader and XMLEventWriter ,we can map the xml
+
+StAX Cursor API- mobile applications
+StAX Iterator API - Enterprise applications
+
+
+XMLInputFactory xmlInputFactory=XMLInputFactory.newInstance();
+XMLStreamReader reader=xmlInputFactory.createXMLStreamReader(new FileInputStream(path.toFile()));
+
+
+while(reader.hasNext())
+{
+  // read XML content
+}
+

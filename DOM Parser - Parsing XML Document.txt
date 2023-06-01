@@ -1,0 +1,23 @@
+DOM Parser - Parsing XML Document
+
+
+
+1.Create a Document Builder
+DocumentBuilderFactory factory=DocumentBuilderFactory.newInstance();
+DocumentBuilder builder=factory.newDocumentBuilder();
+
+2.Create a document from file 
+StringBuilder sb=new StringBuilder();
+sb.append("<?xml version="1.0"?><Department><SNO>1</SNO><DEPARTMENTID>1</DEPARTMENTID><DEPARTMENTNAME>MECHANICAL</DEPARTMENTNAME></Department>");
+
+3.Convert to byte and then use the parser
+ByteArrayInputStream input=new ByteArrayInputStream(sb.toString().getBytes("UTF-8"));
+Document document=builder.parse(input);
+
+//Extract the root element
+Element root=document.getDocumentElement();
+
+child nodes - getChildNodes()
+attributes - getAttributes()
+attribute by specific - getAttribute("attributename")
+elements by tag name - getElementsByTagName("subelement")

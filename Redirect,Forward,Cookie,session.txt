@@ -1,0 +1,18 @@
+Redirect - send as new request works at client side ,sendDirect("servlet2")
+
+Forward - same request and resposne one can forward to another servlet,forward()
+
+Cookie - small piece of information that is being persisted between mutiple request 
+non-persistent cookie - single session
+persistent -cookie - multiple session
+
+advantages
+-------
+maintain state at client side
+
+Session - time interval between which communication should be done between client amd server
+
+
+cookie - client side
+session - server side to store user information
+

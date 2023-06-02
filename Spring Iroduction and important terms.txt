@@ -1,0 +1,43 @@
+Spring
+-----
+earlier we used to have legacy frameworks like EJB,JSF,Struts
+
+Spring i sone of the lightweight framework in 2003 by Rod Johnson
+
+Spring is an open source application framework which is used to develop Java EE applications.Using simple Java POJO's u can create high performing applications,VMware along iwth 
+pivotal software developed this 
+
+Why spring
+-------
+Java complex programs and featurs with heavyweight components that are dependent on OS then we should have some framework which is secure ,light weight and efficient
+
+
+How Spring works:(Spring MVC framework)
+------
+A web application is a layered architecture that has three layers
+
+1.Presentation/View Layer - UI ,Interaction with user
+2.Business logic layer - logic of the pgm
+3.Data Access layer - data retrieval from source system(datbases)
+
+M- Model
+V -View
+C - Controller
+
+Important terms of Spring
+-------
+1.@Component - Spring knows how to manage ,it will auto identify for dependency injection (Instatiate the object)
+2.@autowired - ho wto handle the object instatiation (loose coupling)
+loose coupling - one component is not tightly coupled with other components 
+Eg : view is implemented in htm and business logic layer and dao layer is implemented in java
+so in future if we want to move that to react instead of html we can esaily do that without changing business logic layer and dao layer
+
+3.@bean - backbone of the application.An object is created uisng spring bean that creation,instanciation is managed by the IOC (Inversion Of Control) application
+
+4.Dependecny Injection - we can easily change without affecting the other applications
+1.Setter based dependency injection
+2.constructor based dependency injection
+
+5.Inversion of control- taking contraol away from java class and giving it to spring framework 
+1.ApplicationContext
+2.BeanFcatory

@@ -1,0 +1,49 @@
+Spring Example
+-----
+1.creating java class (POJO - Plain Old java object)
+package com.example;
+public class Department
+{
+   private int sno;
+   private int departmentId;
+   private String departmentName;
+   
+   //getters and setters 
+   
+}
+
+2.create xml file (applicationContext.xml")
+<?xml version="1.0" encoding="UTF-8">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema//beans/spring-beans-3.0.xsd
+xmlns:p="http://wwww.springframewk.org/schema/p">
+
+
+
+<bean id="department" class="com.example.Department">
+<property name="sno" value=1>
+<property name="departmentId value=1>
+<property name="departmentName" value="mech">
+</bean>
+</beans>
+
+
+3.IOC container using Bean factory
+public class Test
+{
+   public static void main(String args[])
+   {
+       Resource resource=new ClassPathResource("applicationContext.xml");
+	   BeanFactory factory=new XmlBeanFactory(resource);
+	   Department department=(Department)factory.getBean("department");
+	   System.out.println("name---"+department.getepartmentName());
+   }
+}
+
+
+4.Load the jar files
+1.org.springframework.core
+2.org.springsource.org.apache.commons.logging
+3.org.springframeowrk.beans
+
+5.run java application 

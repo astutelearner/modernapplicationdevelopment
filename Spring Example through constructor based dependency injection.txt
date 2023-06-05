@@ -1,0 +1,59 @@
+Spring example thrugh constructor based dependency injection
+--------
+1.Create constructor
+package com.example;
+public class Department
+{
+  private int sno;
+  private int departmentId;
+  private String departmentName;
+  
+  Department(int sno,int departmentId,String departmentName)
+  {
+     this.sno=sno;
+	 this.departmentId=departmentId;
+	 this.departmentName=departmentName;
+  }
+  
+  //override the toString method
+  
+}
+
+
+2.Create applicationContext.xml
+-----
+<?xml version="1.0" encoding="UTF-8">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema//beans/spring-beans-3.0.xsd
+xmlns:p="http://wwww.springframewk.org/schema/p">
+
+<bean id="department" class="com.example.Department>
+<constructor-arg value=1 type="int">
+<constructor-arg value=1 type="int">
+<constructor-arg value="ece" gtype="String>
+</bean>
+
+
+</beans>
+
+3.Create ApplicationContext IOC Container
+-------
+class Main
+{
+   public static void main(String args[])
+   {
+      ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+	  Department department=context.getBean("department",Department.class);
+	  System.out.println("department values----"+department);
+   }
+}
+
+
+
+4.Load the jar files
+1.org.springframework.core
+2.org.springsource.org.apache.commons.logging
+3.org.springframeowrk.beans
+
+5.run java application 
+

@@ -1,0 +1,128 @@
+Autowiring
+-----
+establish relationship between the beans with few lines of code
+
+Fives modes of autowiring
+---------
+1.No - defualt mode used by string 
+2.byName - by the name of the bean we will try to inject the dependencies (id)
+Eg:
+---
+1.
+package com.example;
+public class Department
+{
+   private int sno;
+   private int departmentId;
+   private String departmentName;
+   private Faculty faculty;
+   
+   //setter and getter
+
+}
+
+2.
+package com.example;
+public class Faculty{
+ 
+   private int facultyId;
+   private String facultyName;
+   
+   //setter and getters
+
+}
+
+<bean id="faculty" class="com.example.Faculty">
+<property name="facultyId" value=1/>
+<property name="facultyName" value="abc"/>
+</bean>
+
+<bean id="department" class="com.example.Department" autowire="byName">
+<property name="sno" value=1/>
+<property name="departmentId" value=1/>
+<property name="departmentName" value="IT"/>\
+<property name="faculty" ref="faculty"/>
+</bean>
+
+
+3.byType - based on classtypetype it will inject the dependencies (class)
+Eg:
+---
+1.
+package com.example;
+public class Department
+{
+   private int sno;
+   private int departmentId;
+   private String departmentName;
+   private Faculty faculty;
+   
+   //setter and getter
+
+}
+
+2.
+package com.example;
+public class Faculty{
+ 
+   private int facultyId;
+   private String facultyName;
+   
+   //setter and getters
+
+}
+
+<bean id="faculty" class="com.example.Faculty">
+<property name="facultyId" value=1/>
+<property name="facultyName" value="abc"/>
+</bean>
+
+<bean id="department" class="com.example.Department" autowire="byType">
+<property name="sno" value=1/>
+<property name="departmentId" value=1/>
+<property name="departmentName" value="IT"/>\
+<property name="faculty" ref="faculty"/>
+</bean>
+
+
+4.Constructor
+1.
+package com.example;
+public class Department
+{
+   private int sno;
+   private int departmentId;
+   private String departmentName;
+   private Faculty faculty;
+   
+   //constructor based
+
+}
+
+2.
+package com.example;
+public class Faculty{
+ 
+   private int facultyId;
+   private String facultyName;
+   
+   //constructor
+
+}
+
+<bean id="faculty" class="com.example.Faculty">
+<constrcutor-arg value=1 type="int"/>
+<constructor-arg value="abc" type="String"/>
+</bean>
+
+<bean id="department" class="com.example.Department" autowire="constructor">
+<constructor-arg  value=1 type="int"/>
+<constructor-arg value=1 type="int"/>
+<constructor-arg value="IT" type="String"/>\
+<constructor-arg ref="faculty" type="Faculty"/>
+</bean>
+
+
+5.autodetect (since spring 3)
+default constructor - autowired by constructor
+if first one fails then it will go for autowire by type

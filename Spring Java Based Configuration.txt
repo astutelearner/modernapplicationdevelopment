@@ -1,0 +1,43 @@
+Spring java based configuration
+-------
+Instead of using applicationConfiguration.xml use java based configuration
+
+1.create POJO
+public class Department
+{
+  private int sno;
+  private int departmentId;
+  private String departmentName;
+  
+  //setters and getters
+  
+}
+
+
+2.@Configuration
+
+
+@Configuration
+public class DepartmentConfig
+{
+  @Bean
+  public Deprtment department{
+     return new Department();
+  }
+}
+
+
+3.
+public class Main
+{
+  public static void main(String args[])
+  {
+      AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(DepartmentConfig.class);
+	  Department department=ctx.getBean("department");
+	  department.setSno(1);
+	  department.setDepartmentId(1);
+	  department.setDepartmentName("ece");
+	  
+	  System.out.println("department ---"+department);
+  }
+}

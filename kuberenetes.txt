@@ -1,0 +1,39 @@
+Kubernetes
+-----
+kubernetes - k8s
+it is written in  GO language
+
+k8s platground or minikube
+
+
+kuberenetes commands
+------
+kubectl describe deployment
+kubectl get pods
+kubectl get service
+kubectl get deployment
+kubectl describe service
+kubectl logs podname
+kubectl delete service servicename
+kubectl delete pod podname
+kubectl delete deployment deploymentname
+kubectl rollout restart deployment deploymentname
+
+kubernetes lifecycle
+----
+1.running - created properly
+2.pending - waiting state
+3.succeeded - terminated as success
+4.Failed - termibnated as failure 
+5.evicted - error in communication
+
+Features of kubernetes
+-----
+1.CI/CD
+2.Auto scale
+3.efficient utilization of resources
+4.env specific 
+5.focus on development rather than deployment
+
+IBM Cloud Foundry
+IBM Cloud container registry

@@ -1,0 +1,52 @@
+Docker
+-----
+Docker is a software platform where u can build,test and deploy applications quickly
+
+Docker is written in Go language
+
+Steps for creating docker image
+-------
+1.create DockerFile in code
+
+2.login into docker 
+docker login --username=''
+
+3.docker images - to see list of images
+
+4.build the docker image
+docker build -t test .
+
+5.create repository in docker hub with public access
+
+
+6.create tag
+docker tag testjob2 saipriyadarshini/testjob2
+
+synatx for tag creation: 
+docker tag imagename username/imagename
+
+7.push docker image to docker hub
+docker push saipriyadarshini/testjob2
+
+synatx : docker push username/imagename
+
+Important docker commands
+----------
+docker images 
+docker ps
+docker info
+docker login
+docker pull
+docker push
+docker run
+docker stop
+docker kill
+docker commit
+docker exec
+docker build
+docker rm
+docker rmi
+
+docker pull saipriyadarshini/testjob:latest
+
+
